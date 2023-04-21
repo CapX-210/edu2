@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lobster&family=Monoton&family=Poppins:wght@500;800&family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+.logo{
+    text-decoration: none;
+    color:#fdc938;
+    font-size: 40px;
+    font-family:'Poppins';
+}
+body{
+    font-family: sans-serif;
+}
+h1{
+    font-size:2.5rem;
+    font-weight: 700;
+    color:rgb(35,35,35);
+}
+span{
+    font-size:.9rem;
+    color:#757373;
+}
+h6{
+    font-size:1.1rem;
+    color:rgb(24,24,49);
+}
+nav{
+    display:flex;
+    width:100%;
+    background-color:transparent;
+    backdrop-filter:blur(15px);
+    flex-direction: row;
+    justify-content: space-between;
+    padding:1vw 8vw;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+     position: fixed;
+}
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size:16px;
+    font-weight: 500;
+}
+nav .navigation ul li a:hover{
+    color: rgb(255, 191, 0);
+}
+#home{
+    background-image: url(image/sc1.jpg);
+    width:100%;
+    height:100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding-top:40px ;
+}
+#home h2{
+    color:white;
+    font-size:2rem;
+    letter-spacing:1px;
+}
+#home .btn{
+    margin-top:30px;
+}
+#home p{
+    width:50%;
+    color:white;
+    font-size:0.9rem;
+    
+    line-height:25px;
+}
+#home a{
+    text-decoration:none;
+    font-size:0.9rem;
+    padding:13px 35px;
+    background:#fff;
+    font-weight:600;
+    border-radius:7px;
+}
+#home .btn .blue{
+    color: #fff;
+    background: rgb(21,21,100);
+    transition: ease 0.3s;
+}
+#home .btn .blue:hover{
+    color: rgb(21,21,100);
+    background: #fff;
+}
+#home .btn .yellow{
+    color: #fff;
+    background:#fdc938; transition: ease 0.3s;
+}
+#home .btn .yellow:hover{
+    color:#fdc938;
+    background: #fff;
+}
+.icon{
+    font-size: 40px;
+}
+@media screen and (max-width: 600px) {
+    nav .pcul {
+      flex-direction: row;
+      display: none;
+      width: 100%;
+    }
+    nav li {
+      margin-right: 0;
+      display: none;
+    }
+    nav .icon {
+      display: flex;
+      float: right;
+      font-size: 28px;
+      color: rgb(0, 0, 0);
+      padding: 10px;
+      margin-right: 65px;
+      margin-left: -7px;
+    }
+    nav .icons #menu{
+        display:block;
+        
+    }
+  }
+  
+.dropdown-menu{
+    position: absolute;
+    top: 110%;
+
+    right: 10;
+    background:white;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    display: none;
+    width: 318px;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu ul{
+    margin-left:  10px ;
+    display: flex;
+    
+}
+.dropdown-menu li{
+   display: block;
+    padding: 10px;
+    
+}
+.dropdown-menu li a{
+    color:rgb(255, 191, 0);
+   
+    text-decoration: none;
+    font-size: 14px;
+}
+.dropdown-menu li a:hover{
+    color:#fdc938;
+}
+      
+      .dropdown-menu.active {
+        display: block;
+      }
+      .icon{
+        display:flex;
+       
+      }
+   .icon i{
+    font-size: 18px;
+    margin-left:15px;
+    color:#ffffff
+    ;
+   }   
+.icons #menu{
+   display:none;
+   color: #fff;
+}
+.icon i:hover{
+    color: #fdc938;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    margin-right:-90px;
+}
+.icons #menu:hover{
+    color: #fdc938;
+}
+#about section{
+    display:grid;
+    place-items:center;
+    align-content:center;
+    min-height:100vh;
+}
+.hidden{
+    opacity:0;
+    filter:blur(5px);
+    transform:translateX(-100%);
+    transition:all 1s;
+}
+.show{
+    opacity:1;
+    filter:blur(0);
+    transform:translateX(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
